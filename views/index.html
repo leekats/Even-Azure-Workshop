@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Lee Katsnelson">
+
+    <title>Even Workshop</title>
+
+    <!-- AngularJS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.17/angular-filter.js"></script>
+    <script src="https://unpkg.com/sweetalert2@7.20.1/dist/sweetalert2.all.js"></script>
+    <script src="/assets/angular/angApp.js"></script>
+    <script src="/assets/angular/cardCtr.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/assets/stylesheets/bootstrap.min.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link href="/assets/images/favicon.ico" rel="icon">
+    <!-- Custom styles -->
+    <link href="/assets/stylesheets/custom.css" rel="stylesheet">
+    <!-- Bootstrap core JavaScript -->
+    <script src="/assets/javascripts/jquery.min.js"></script>
+    <script src="/assets/javascripts/bootstrap.bundle.min.js"></script>
+    <script src="/assets/javascripts/tether.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body ng-app="evenworkshop">
+
+    <div ng-controller="root">
+        <div class="cards">
+            <card class="crd" ng-repeat="card in db"></card>
+        </div>
+    </div>
+
+</body>
+
+</html>

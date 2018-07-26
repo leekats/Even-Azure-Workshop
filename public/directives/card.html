@@ -1,0 +1,11 @@
+<div class="card h-200" style="width:300px;margin:auto;">
+    <img class="card-img-top" ng-init="addPic(card)" ng-src="data:image/JPEG;base64,{{cardImages[card.blobName]}}">
+    <div class="card-body">
+        <p class="card-text" ng-repeat="caption in card.data">
+            {{caption.text}}
+        </p>
+    </div>
+    <div class="card-footer" style="text-align: center">
+        {{card.senderName}}
+    </div>
+</div>
