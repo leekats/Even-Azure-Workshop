@@ -4,7 +4,7 @@ var DocumentDBClient = require('documentdb').DocumentClient;
 var cosmos = require('../dbconnection');
 
 exports.getData = (req, res) => {
-    var queryString = "SELECT c.blobName, c.data, c.senderName FROM root c";
+    var queryString = "SELECT c.blobName, c.data, c.senderName, c._ts FROM root c ORDER BY c._ts DESC";
     const header = 'dbs/Workshop/colls/result';
     queryExecution(header, queryString, res);
 }
