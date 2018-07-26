@@ -1,8 +1,8 @@
-<div class="card h-200" style="width:300px;margin:auto;">
+<div class="card" style="height:400px;width:300px;margin:auto;">
     <img class="card-img-top" ng-init="addPic(card)" ng-src="data:image/JPEG;base64,{{cardImages[card.blobName]}}">
     <div class="card-body">
         <p class="card-text" ng-repeat="caption in card.data">
-            {{caption.text}}
+            {{caption.text}} <span style="color:darkolivegreen; font-size: 12px">({{(caption.confidence * 100).toFixed(2)}}%)</span>
         </p>
     </div>
     <div class="card-footer" style="text-align: center">
